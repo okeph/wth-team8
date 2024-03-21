@@ -18,5 +18,5 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         scope: resourcegroup
-        resourceGroupName: ${{ variables.RESOURCE_GROUP_NAME }}
+        resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
         template: '../../Infrastructure/azuredeploy.bicep'
