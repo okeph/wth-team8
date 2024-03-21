@@ -15,7 +15,7 @@ jobs:
         creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL_CREDENTIALS }}
 
     - name: Deploy Bicep template
-      uses: azure/arm-deploy@v1
+      uses: azure/deploy@v1
       with:
         scope: resourcegroup
         resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
