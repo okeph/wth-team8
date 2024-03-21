@@ -18,6 +18,6 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
-        resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
+        resourceGroup: ${{ env.RESOURCE_GROUP_NAME }}
         template: '../../Infrastructure/azuredeploy.bicep'
         
