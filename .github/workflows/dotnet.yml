@@ -26,8 +26,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
+      run: dotnet restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/
     - name: Build
-      run: dotnet build --no-restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
+      run: dotnet build --no-restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/
     - name: Test
-      run: dotnet test --no-build --verbosity normal /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
+      run: dotnet test --no-build --verbosity normal /workspaces/wth-team8/Application/src/RazorPagesTestSample/
