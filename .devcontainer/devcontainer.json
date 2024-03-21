@@ -14,5 +14,6 @@
 				"GitHub.copilot-chat"
 			]
 		}
-	}
+	},
+    "postCreateCommand": "cd Application && dotnet restore"
 }
