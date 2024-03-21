@@ -1,14 +1,23 @@
-
-name: Manual Trigger Workflow
-
+ 
+name: Manual Workflow
 on:
   workflow_dispatch:
 
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - step1: echo "step1"
-      - step2: echo "step2"
+      - name: Checkout code
+        uses: actions/checkout@v2
       
+      # Add your steps here
+      
+      - name: Build and test
+        run: |
+          echo "Building and testing..."
+          # Add your build and test commands here
+          
+      - name: Deploy
+        run: |
+          echo "Deploying..."
+          # Add your deployment commands here
