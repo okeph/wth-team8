@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace RazorPagesTestSample.Data
 {
     /// <summary>
-    /// Represents the database context for the application.
     /// </summary>
     public class AppDbContext : DbContext
     {
