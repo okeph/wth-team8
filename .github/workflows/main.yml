@@ -1,1 +1,14 @@
 
+name: Manual Trigger Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - step1: echo "step1"
+      - step2: echo "step2"
+      
