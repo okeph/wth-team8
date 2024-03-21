@@ -19,5 +19,5 @@ jobs:
       with:
         subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
         resourceGroupName: "wth-team8-rg"
-        template: '../../Infrastructure/azuredeploy.bicep'
+        template: './InfrastructureAsCode/main.bicep'
         
