@@ -6,8 +6,13 @@ name: .NET
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'Application/**'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'Application/**'
+    
 
 jobs:
   build:
@@ -21,8 +26,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal /workspaces/wth-team8/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
